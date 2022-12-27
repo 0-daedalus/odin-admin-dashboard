@@ -18,10 +18,14 @@
     grid-column: 2;
     grid-row: 2;
     background-color: grey;
+    display:grid;
+    grid-template-columns: 5fr 2fr;
+    padding: 10px;
 }
 
 .sidebar{
     display: grid;
+    padding: 10px;
 }
 
 .sidebar, .nav, .settings{
@@ -32,8 +36,43 @@
 .header{
     display:grid;
     grid-template-rows: 1fr 1fr;
+    padding: 10px;
 }
 .upper, .lower{
     display: grid;
     grid-template-columns: 2fr 1fr;
+    align-items: center;
+}
+
+.projects, .info, .announcements, .trending{
+    display: grid;
+}
+
+.projects{
+    grid-template-rows: auto 1fr;
+    padding: 10px;
+}
+.info{
+    padding: 10px;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-rows: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.card{
+    height: 200px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    border-left: 5px solid yellow;
+}
+
+.card-announcements, .card-trending{
+    height: 20rem;
+    background-color: aliceblue;
+    border-radius: 10px;
+    border-left: 5px solid yellow;
 }
