@@ -53,6 +53,9 @@
 .projects, .info, .announcements, .trending{
     display: grid;
 }
+.announcements, .trending{
+    padding: 8px 16px 8px 16px;
+}
 
 .projects{
     grid-template-rows: auto 1fr;
@@ -135,6 +138,7 @@ input[type="text"]::placeholder{
     width: 2rem;
 }
 
+
 .message{
     display: flex;
     gap: 15px;
@@ -181,4 +185,21 @@ input[type="text"]::placeholder{
 }
 button:active{
     box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.384);
+}
+
+.profile-link{
+    display: flex;
+    align-items: center;
+}
+.mini-image{
+    border-radius: 50%;
+    height: 3.5rem;
+}
+.user{
+    padding-left: 10px;
+}
+.user > p{
+    margin: 0;
+    padding-top: 5px;
+    color: grey
 }
