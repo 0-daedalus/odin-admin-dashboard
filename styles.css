@@ -127,7 +127,11 @@
     border-left: 5px solid #facc15;
     padding: 15px;
     overflow-y: scroll;
+    scrollbar-width: none;
     display: grid;
+}
+.card-announcements::-webkit-scrollbar, .card-trending::-webkit-scrollbar{
+    display: none;
 }
 .news{
     border-bottom: 1px solid grey;
@@ -137,7 +141,7 @@ input[type="text"]{
     padding: 8px;
     float: left;
     border: none;
-    border-radius: 20px;
+    border-radius: 15px;
     background-color: #bfdbfe;
     width: min(50rem, 75%);
 }
@@ -215,7 +219,6 @@ input[type="text"]::placeholder{
     background-color: #6366f1;
     border: none;
     border-radius: 100px;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.39);
     color: white;
     font-weight: bold;
 }
